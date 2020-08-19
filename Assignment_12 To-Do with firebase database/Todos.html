@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome icon  -->
+    <script src="https://kit.fontawesome.com/e941257566.js" crossorigin="anonymous"></script>
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+   
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBn5xCFrScZkXbDVke7_frS-_NmoTGATxs",
+    authDomain: "todoapp-3df05.firebaseapp.com",
+    databaseURL: "https://todoapp-3df05.firebaseio.com",
+    projectId: "todoapp-3df05",
+    storageBucket: "todoapp-3df05.appspot.com",
+    messagingSenderId: "884397480545",
+    appId: "1:884397480545:web:0b2e7cec440a4ff08ae820",
+    measurementId: "G-X5KRRC3YN7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    
+</head>
+<body>
+    <h1><span class="title">TODO</span>List</h1>
+    <div class="input_div">
+        <input type="text" class="input" id="toDo" placeholder="What Do You Want To Do ..">
+        <button class="addButton" onclick="addTodo()"><i class="fas fa-plus-circle"></i></button>
+        <button class="addButton" onclick="dltAll()"><i class="far fa-trash-alt" ></i></button>
+
+    </div>
+    <div class="container">
+        <div class="item" id="item">
+            <ul id="list">
+
+            </ul>
+            <!-- <input type="text" class="item_input" disabled>
+            <button class="edit"><i class="far fa-edit"></i></button>
+            <button class="remove"><i class="fas fa-minus-circle"></i></button> -->
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+
